@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Contact List</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ffffff;
+        }
+        h1 {
+            color: #fd2200;
+        }
+        .form-group label {
+            color: #6c757d;
+        }
+        .list-group-item {
+            background-color: #1cd807;
+            margin-bottom: 10px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-secondary {
+            background-color: #6c757d;
+            border-color: #6c757d;
+        }
+        .btn-danger {
+            background-color: #dc3545;
+            border-color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Contact List</h1>
+        <form id="contactform">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input id="name" class="form-control" type="text" required>
+            
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input id="phone" class="form-control" type="tel" pattern="[0-9]{10}" required>
+            </div>
+            <div class="form-group">
+                <label for="Email">Email</label>
+                <input id="Email" class="form-control" type="email" required>
+            </div>
+            <div class="form-group">
+                <label for="Password">Password</label>
+                <input id="password" class="form-control" type="password" required>
+            </div>
+            <input id="index" type="hidden">
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+        <ul id="contactList" class="list-group mt-4"></ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="dara.js"></script>
+</body>
+</html>
